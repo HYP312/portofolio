@@ -1,0 +1,415 @@
+.mediaViewInfo {
+	--web-view-name: ART PAGE;
+	--web-view-id: ART_PAGE;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: ART_PAGE;
+}
+
+#ART_PAGE {
+	--web-view-name: ART PAGE;
+	--web-view-id: ART_PAGE;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+	/**/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 500px;
+}
+
+.top-art-supercon{
+	background: #555555;
+	margin: 0;
+	padding: 0 auto;
+	width: 960px;
+	height: 960px;
+}
+
+.top-art-contain{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin:0;
+}
+
+.top-art-n{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	max-width: 960px;
+	padding : 105px;
+}
+
+.top-sec{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 960px;
+	margin: 0;
+	margin-top: 50px;
+	padding:35px;
+	height: 580px;
+	background: #333333;
+}
+
+#The_eye{
+	width: 200px;
+}
+
+#top_art{
+	font-size: 72px;
+	font-weight: 600;
+	color:white;
+	margin: 25px;
+}
+
+
+ 
+#Pada_halaman_ini_kami_akan_men {
+	/*left: 90px;
+	top: 196px;
+	position: absolute;
+	overflow: visible;*/
+	
+	white-space: nowrap;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(198,203,216,1);
+	width:500px;
+	padding-bottom: 40px;
+}
+
+.Component_5___1 {
+    position: relative;
+    max-width: 260px;
+	/*left: 940px;
+	top: 280px;*/
+}
+
+.More__text{
+	color: whitesmoke;
+	text-decoration: none;
+}
+#Text {
+	left: 351px;
+	top: 403px;
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 56px;
+	color: rgba(198,203,216,1);
+}
+.more_content{
+	
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 1010px;
+	margin: 0;
+	margin-top: 250px;
+	padding: 35px;
+	height: 800px;
+	padding-bottom: 90px;
+	background: #333333;
+}
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+.wrapper{
+    max-width: 100px;
+    margin-bottom: 350px;
+	z-index: 0;
+}
+.wrapper nav{
+    display: flex;
+    justify-content: center;
+    margin-left: 190px;
+}
+.wrapper .items{
+	margin-right: 90px;
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-gap: 10px;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+}
+.items span{
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 300px;
+    cursor: pointer;
+    color: #007bff;
+    border-radius: 20px;
+    border: 2px solid #007bff;
+    transition: all 0.3s ease;
+  }
+  .items span.active,
+  .items span:hover{
+    color: #fff;
+    background: #007bff;
+  }
+  .container .box.hide{
+    display: none;
+  }
+  .container .box.show{
+    animation: animate 0.4s ease-in;
+  }
+@keyframes animate {
+    0%{
+      transform: scale(0.5);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+.container{
+    right: 570px;
+    top: 130px;
+    position: relative;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+.container .box{
+    position: relative;
+    width: 235px;
+    height: 235px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.container .box:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+.container .box .img8x{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.container .box .img8x:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg,#fff,#000);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box:hover .img8x:before{
+    opacity: 1;
+}
+.container .box .img8x img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+.container .box .content h2{
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+}
+.container .box:hover .content h2{
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+.container .box .content p{
+    color: #fff;
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+}
+.container .box:hover .content p{
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+@media only screen and (max-width: 660px) {
+	.showcase,
+	.showcase header
+	{
+	  padding: 40px;
+	}
+	.text h2
+	{
+	  font-size: 40px;
+	}
+	.text h3
+	{
+	  font-size: 30px;
+	}
+	.social{
+	  bottom: 100px;
+	}
+	.top-art-supercon, 
+	.top-sec {
+		width: 100vw;
+	}
+	.top-art-contain{
+		height: 1000px;
+	}
+	#Pada_halaman_ini_kami_akan_men {
+		font-size: 12px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	#The_eye{
+		width: 150px;
+		margin-left: -30px;
+	}
+	#top_art{
+		margin-top: 1090px;
+		margin-bottom: -90px;
+		font-size: 50px;
+		margin-right: 10px;
+	}
+	.container{ 
+        grid-template-columns: repeat(1, 1fr); 
+        top: 9px;
+		right: 0;
+		left: -60px;
+    }
+    .container .box{
+    	width: 220px;
+    	height: 220px;
+    }
+    .more_content{
+    	height: 1990px;
+    	width: 360px;
+    }
+    .wrapper .items{
+    	padding-bottom: 999px;
+    	margin-left: -290px;
+    	grid-template-columns: repeat(3, 1fr);
+    }
+    .items span{
+    	font-weight: 10px;
+    	font-size: 10px;
+    }
+
+
+  }
+
+  @media (max-width:1250px){
+	.showcase,
+  .showcase header
+  {
+	padding: 40px;
+	margin-top: 90px
+  }
+  .text h2
+  {
+	font-size: 50px;
+	margin-top: -300px
+  }
+  .text h3
+  {
+	font-size: 40px;
+  }
+  .social{
+	bottom: -50px;
+  }
+  .top-art-supercon, 
+  .top-sec {
+	  width: 100vw;
+  }
+  .top-art-contain{
+	  height: 1100px;
+  }
+  #Pada_halaman_ini_kami_akan_men {
+	  font-size: 27px;
+	  margin-right: 0px;
+	  margin-left: 0px;
+  }
+  #The_eye{
+	  width: 250px;
+	  margin-left: -30px;
+  }
+  #top_art{
+	  margin-top: 990px;
+	  margin-bottom: 120px;
+	  font-size: 50px;
+	  margin-right: 10px;
+  }
+  .container{ 
+	  grid-template-columns: repeat(2, 1fr); 
+	  top: -100px;
+	  right: 0;
+	  left: -240px;
+  }
+  .container .box{
+	  width: 230px;
+	  height: 220px;
+  }
+  .more_content{
+	  height: 120vh;
+	  width: 860px;
+  }
+  .wrapper .items{
+	  padding-bottom: 799px;
+	  margin-left: 150px;
+	  grid-template-columns: repeat(3, 1fr);
+  }
+  .items span{
+	  font-weight: 10px;
+	  font-size: 15px;
+  }
+
+}
+  /**@media only screen and (min-width: 700px) and (max-width: 992px) {
+    .container{ 
+        grid-template-columns: repeat(2, 2fr); 
+        top: 90px;
+        left: 75px;
+    }**/
+  
+
+
+
